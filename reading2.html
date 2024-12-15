@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDU Portal | Reading#2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/img/logo white.png">
+    <link rel="stylesheet" href="style 11.css">
+    <link rel="stylesheet" href="reading.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.html"><img src="img/logo white.png" alt="logo" class="logo"></a>
+            
+            <div class=" sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">EDU Portal</h5>
+                    <button type="button text-white" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" aria-current="page" href="Books.html">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" aria-current="page" href="vocab1.html">Vocabulary</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link mx-lg-2 text-white"  href="grammar1.html">Grammar</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link mx-lg-2 dropdown-toggle " role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                               Reading
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="reading1.html">Reading 1</a></li>
+                                <li><a class="dropdown-item" href="reading2.html">Reading 2</a></li>
+                                <li><a class="dropdown-item" href="reading3.html">Reading 3</a></li>
+                                <li><a class="dropdown-item" href="reading4.html">Reading 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="exit-btn">Exit</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="container-fluid reading ">
+        <h2 class="text-center">Robot Teachers </h2>
+        <p>
+            If you think of the jobs robots could never do, you would probably put doctors and teachers at the top of the list. It's easy to imagine robot cleaners and factory workers, but some jobs need human connection and creativity. But are we underestimating what robots can do? In some cases, they already perform better than doctors at diagnosing illness. Also, some patients might feel more comfortable sharing personal information with a machine than a person. Could there be a place for robots in education after all? 
+            <br><br>
+            British education expert Anthony Seldon thinks so. And he even has a date for the robot takeover of the classroom: 2027. He predicts robots will do the main job of transferring information and teachers will be like assistants. Intelligent robots will read students' faces, movements and maybe even brain signals. Then they will adapt the information to each student. It's not a popular opinion and it's unlikely robots will ever have empathy and the ability to really connect with humans like another human can. 
+            <br><br>
+            One thing is certain, though. A robot teacher is better than no teacher at all. In some parts of the world, there aren't enough teachers and 9–16 per cent of children under the age of 14 don't go to school. That problem could be partly solved by robots because they can teach anywhere and won't get stressed, or tired, or move somewhere for an easier, higher-paid job. 
+            <br><br>
+            Those negative aspects of teaching are something everyone agrees on. Teachers all over the world are leaving because it is a difficult job and they feel overworked. Perhaps the question is not 'Will robots replace teachers?' but 'How can robots help teachers?' Office workers can use software to do things like organise and answer emails, arrange meetings and update calendars. Teachers waste a lot of time doing non-teaching work, including more than 11 hours a week marking homework. If robots could cut the time teachers spend marking homework and writing reports, teachers would have more time and energy for the parts of the job humans do best. 
+           <br>
+        </p>
+            <hr class="hr">
+            <form id="quizForm1" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+                <p class="que">Q1. Most jobs seem as if they can be done by robots or computers.  </p>
+                <label class=" me-3">
+                    <input type="radio" name="question1" value="True"> True
+                </label>
+                <label class="me-3">
+                    <input type="radio" name="question1" value="False"> False
+                </label>
+                <p id="result1" class=" mt-2 result"></p>
+            </form>
+
+            <form id="quizForm2" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+                <p class="que">Q2. Robots are always better at diagnosing illnesses than doctors. </p>
+                <label class=" me-3">
+                    <input type="radio" name="question2" value="True"> True
+                </label>
+                <label class="me-3">
+                    <input type="radio" name="question2" value="False"> False
+                </label>
+                <p id="result2" class=" mt-2 result"></p>
+            </form>
+
+            <form id="quizForm3" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+                <p class="que">Q3. Many experts agree robots will replace teachers by 2027. </p>
+                <label class=" me-3">
+                    <input type="radio" name="question3" value="True"> True
+                </label>
+                <label class="me-3">
+                    <input type="radio" name="question3" value="False"> False
+                </label>
+                <p id="result3" class=" mt-2 result"></p>
+            </form>
+
+            <form id="quizForm4" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+                <p class="que">Q4. One advantage of robot teachers is that they don't need to rest. </p>
+                <label class=" me-3">
+                    <input type="radio" name="question4" value="True"> True
+                </label>
+                <label class="me-3">
+                    <input type="radio" name="question4" value="False"> False
+                </label>
+                <p id="result4" class=" mt-2 result"></p>
+            </form>
+
+            <form id="quizForm5" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+                <p class="que">Q5. Robot assistants could help teachers by marking homework and writing reports.  </p>
+                <label class=" me-3">
+                    <input type="radio" name="question5" value="True"> True
+                </label>
+                <label class="me-3">
+                    <input type="radio" name="question5" value="False"> False
+                </label>
+                <p id="result5" class=" mt-2 result"></p>
+            </form>
+
+            <form id="quizForm6" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+                <p class="que">Q6. Some teachers use robots to reduce their time answering emails and marking homework.  </p>
+                <label class=" me-3">
+                    <input type="radio" name="question6" value="True"> True
+                </label>
+                <label class="me-3">
+                    <input type="radio" name="question6" value="False"> False
+                </label>
+                <p id="result6" class=" mt-2 result"></p>
+            </form>
+            <div class="row">
+                <div class="col-md-2 mx-auto">
+                    <div class="btn next-btn"><a href="reading1.html">Previous</a></div>
+                    </div>
+                <div class="col-md-2 mx-auto">
+                <div class="btn next-btn"><a href="reading3.html">Next</a></div>
+                </div>
+            </div>
+        </div>
+    <!--Footer-->
+    <footer class="text-center text-lg-start text-white">
+        <div class="container pb-0">
+            <section class="">
+                <div class="row">
+                    <div class="col-md-3 col-md-3 col-md-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4">
+                            EDU Portal
+                        </h6>
+                        <p>
+                            Empowering education through a centralized platform for students, teachers
+                            and parents.
+                        </p>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-link">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+                        <p>
+                            <a class="quicklinks" href="index.html">Home</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="about_us.html">About Us</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="contact us.html">Contact Us</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="login.html">Sign In</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="ref.html">References</a>
+                          </p>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 footer-link">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            Courses
+                        </h6>
+                        <p>
+                            <a class="quicklinks" href="vocab1.html">Vocabulary</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="grammar1.html">Grammar</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="reading1.html">Reading</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="Books.html">Books</a>
+                          </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i> No. 635/J, Yoe Ma Yeik Thar (Pyae Road), 2nd Ward, Kamayut
+                            Township, Yangon.</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@edusn.co.uk</p>
+                        <p><i class="fas fa-phone mr-3"></i> +959 793 333 550</p>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-3">
+
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <div class="p-3">
+                            © Copyright 2024 EDU Portal. All rights reserved. Developed by The Artistic Avengers.
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <a href="https://www.facebook.com/profile.php?id=61569275469732&mibextid=ZbWKwL" class="m-1"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/hazel_in4k/profilecard/?igsh=MTBxejFlaTZwaWpo" class="m-1"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com/@edusn89?si=yujkEL1pSHDolMkS" class ="m-1"><i class="fa-brands fa-youtube"></i></a>
+                        <a class="m-1"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script>
+   document.getElementById('quizForm1').addEventListener('change', function(event) {
+    const result1 = document.getElementById('result1');
+    if (event.target.name === 'question1') {
+        if (event.target.value === 'False') {
+            result1.textContent = 'Correct!';
+            result1.className = 'correct';
+        } else {
+            result1.textContent = 'Wrong!';
+            result1.className = 'wrong';
+        }
+    }
+});
+
+document.getElementById('quizForm2').addEventListener('change', function(event) {
+    const result2 = document.getElementById('result2');
+    if (event.target.name === 'question2') {
+        if (event.target.value === 'False') {
+            result2.textContent = 'Correct!';
+            result2.className = 'correct';
+        } else {
+            result2.textContent = 'Wrong!';
+            result2.className = 'wrong';
+        }
+    }
+});
+document.getElementById('quizForm3').addEventListener('change', function(event) {
+    const result3 = document.getElementById('result3');
+    if (event.target.name === 'question3') {
+        if (event.target.value === 'False') {
+            result3.textContent = 'Correct!';
+            result3.className = 'correct';
+        } else {
+            result3.textContent = 'Wrong!';
+            result3.className = 'wrong';
+        }
+    }
+});
+document.getElementById('quizForm4').addEventListener('change', function(event) {
+    const result4 = document.getElementById('result4');
+    if (event.target.name === 'question4') {
+        if (event.target.value === 'True') {
+            result4.textContent = 'Correct!';
+            result4.className = 'correct';
+        } else {
+            result4.textContent = 'Wrong!';
+            result4.className = 'wrong';
+        }
+    }
+});
+document.getElementById('quizForm5').addEventListener('change', function(event) {
+    const result5 = document.getElementById('result5');
+    if (event.target.name === 'question5') {
+        if (event.target.value === 'True') {
+            result5.textContent = 'Correct!';
+            result5.className = 'correct';
+        } else {
+            result5.textContent = 'Wrong!';
+            result5.className = 'wrong';
+        }
+    }
+});
+document.getElementById('quizForm6').addEventListener('change', function(event) {
+    const result6 = document.getElementById('result6');
+    if (event.target.name === 'question6') {
+        if (event.target.value === 'False') {
+            result6.textContent = 'Correct!';
+            result6.className = 'correct';
+        } else {
+            result6.textContent = 'Wrong!';
+            result6.className = 'wrong';
+        }
+    }
+});
+</script>
+</html>

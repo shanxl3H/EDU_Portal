@@ -1,0 +1,105 @@
+@font-face {
+   font-family: Alte_Bold;
+   src: url(font/AlteHaasGroteskBold.ttf);
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   
+}
+
+body{
+   background-color: #f1f6ec;
+}
+nav {
+   background-color: #283618;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   box-sizing: border-box;
+   transition: all .35s ease;
+   
+}
+.exit-btn {
+   background-color: #d6270f;
+   padding: 8px 20px;
+   color: white;
+   font-weight: bold;
+   border-radius: 5px;
+   text-decoration: none;
+   transition: 0.3s background-color;
+}
+.exit-btn:hover {
+   background-color: #a9200d;
+}
+.navbar-toggler {
+  border-color: white;
+  color: white;
+  border: none;
+  font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus {
+   box-shadow: none;
+   outline: none;
+   
+}
+.nav-link {
+   color: rgb(171, 168, 168);
+   font-weight: 500;
+   position: relative;
+}
+.nav-link:hover, .nav-link.active {
+   color: white;
+}
+.logo {
+   width: 80px;
+}
+.navbar-toggler-icon {
+   color: white;
+}
+
+.offcanvas-title {
+   color: white;
+   font-weight: 800;
+}
+
+@media(max-width: 991px) {
+   .sidebar {
+       background-color: rgba(14, 61, 6, 0.15) ;
+       backdrop-filter: blur(5px);
+   }
+}
+
+footer {
+   margin-top: 100px;
+   position: relative;
+   width: 100%;
+   height: auto;
+   padding: 50px 100px;
+   background-color: #283618;
+}
+footer .row h6 {
+   font-weight: 600;
+}
+footer .row p {
+   font-size: small;
+}
+footer div a {
+   text-decoration: none;
+   cursor: pointer;
+   color: rgb(140, 140, 140);
+   transition: 0.5s;
+   display: inline-block;
+   transition-property: transform;
+   transform: translateZ(0);
+   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.footer-link a:hover {
+   color: white;
+   transform: translateX(5px);
+   color: lighten(rgb(255, 255, 255), 15%);
+}
+footer .fa-brands {
+   font-size: 20px;
+   color: white;
+}

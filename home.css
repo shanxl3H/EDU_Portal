@@ -1,0 +1,256 @@
+@font-face {
+    font-family: Alte_Bold;
+    src: url(font/AlteHaasGroteskBold.ttf);
+}
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    font-family: "Gill Sans", sans-serif; 
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,20,0.7),rgba(4,9,20,0.7)), url(img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+section {
+    padding: 2rem;
+}
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/Hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content {
+    max-width: 50rem;
+}
+.home .content h3 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.39);
+}
+.home .content span {
+    font-size: 15px;
+    color: #2e3a17;
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: Alte_Bold;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.39);
+}
+.home .content p {
+    font-size: 25px;
+    color: #283618;
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-family: Alte_Bold;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.20);
+}
+.home .content .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 20px;
+    background: #333;
+    padding: .9rem, 3.5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-family: Alte_Bold;
+}
+.home .content .btn:hover {
+    background-color: #283618;
+}
+.courses {
+    margin-top: 50px;
+}
+.courses h3 {
+    font-family: Alte_Bold;
+    text-align: center;
+}
+.wrapper {
+    padding: 10px 10%;
+}
+.box-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.box img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.overlay {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent,#1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.overlay h4{
+    font-family: Alte_Bold;
+    margin-bottom: 5px;
+    margin-top: 35%;
+    font-size: 20px;
+    color: white;
+}
+.overlay a {
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #BC6C25;
+    text-align: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+.box:hover img {
+    transform: scale(1.2);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+.review-h3 {
+    padding-top: 100px;
+    font-family: Alte_Bold;
+    text-align: center;
+}
+.Review {
+    position: relative;
+    width: 100%;;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.swiper-container {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    background-color: #2a3a2533;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(4px);
+  }
+  .swiper-slide-active {
+    filter: blur(0px);
+    background-color: white;
+  }
+  .testimonialBox {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 30px;
+    color: #999;
+  }
+  .testimonialBox .quote {
+    position: relative;
+    top: 1%;
+    left: 200px;
+    opacity: 0.2;
+    width: 50px;
+    height: auto;
+  }
+  .testimonialBox .details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .testimonialBox .details .imgBox {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+.testimonialBox .details .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonialBox .details h3 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2a3a25;
+    line-height: 1.1em;
+      font-family: Alte_Bold;
+}
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+.accordion  {
+    justify-content: center;
+    align-items: center;
+}
+.accordion .card-footer {
+    background-color: #606C38; 
+}
+.faq-title {
+    font-family: Alte_Bold;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.accordion {
+    --bs-accordion-active-bg: #606C38;
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-btn-focus-box-shadow: #11130a;
+}
+#Totop {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 35px;
+    width: 35px;
+    background-image: url(img/top.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #606C38;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 6px 10px 38px -16px rgba(0,0,0,1);
+    transition: transform 0.3s,
+                box-shadow 0.3s;
+}
+#Totop:active {
+    transform: translateY(10px);
+    box-shadow: none;
+}

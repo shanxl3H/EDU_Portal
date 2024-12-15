@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDU Portal | Vocabulary#2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/img/logo white.png">
+    <link rel="stylesheet" href="vocab.css">
+    <link rel="stylesheet" href="style 11.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.html"><img src="img/logo white.png" alt="logo" class="logo"></a>
+
+            <div class=" sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">EDU Portal</h5>
+                    <button type="button text-white" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" aria-current="page" href="Books.html">Books</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" aria-current="page" href="vocab1.html">Vocabulary</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link mx-lg-2 text-white"  href="grammar1.html">Grammar</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link mx-lg-2 dropdown-toggle " role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                               Reading
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="reading1.html">Reading 1</a></li>
+                                <li><a class="dropdown-item" href="reading2.html">Reading 2</a></li>
+                                <li><a class="dropdown-item" href="reading3.html">Reading 3</a></li>
+                                <li><a class="dropdown-item" href="reading4.html">Reading 4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="index.html" class="exit-btn">Exit</a>
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <div class="container-fluid vocab ">
+        <form id="quizForm8" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+            <p class="que">Q1.A bicycle is a vehicle that has two wheels and is powered by pedaling.</p>
+            <label class=" me-3">
+                <input type="radio" name="question8" value="True"> True
+            </label>
+            <label class="me-3">
+                <input type="radio" name="question8" value="False"> False 
+            </label>
+            <p id="result8" class=" mt-2 result"></p>
+        </form>
+
+        <form id="quizForm9" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+            <p class="que">Q2.A dog is a type of fruit that grows on trees.</p>
+            <label class=" me-3">
+                <input type="radio" name="question9" value="True"> True
+            </label>
+            <label class="me-3">
+                <input type="radio" name="question9" value="False"> False
+            </label>
+            <p id="result9" class=" mt-2 result"></p>
+        </form>
+
+        <form id="quizForm10" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+            <p class="que">Q3.You can read a book to gain information or for entertainment.</p>
+            <label class=" me-3">
+                <input type="radio" name="question10" value="True"> True
+            </label>
+            <label class="me-3">
+                <input type="radio" name="question10" value="False"> False
+            </label>
+            <p id="result10" class=" mt-2 result"></p>
+        </form>
+
+        <form id="quizForm11" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+            <p class="que">Q4.The sun is a large star that provides light and warmth to the Earth.</p>
+            <label class=" me-3">
+                <input type="radio" name="question11" value="True"> True
+            </label>
+            <label class="me-3">
+                <input type="radio" name="question11" value="False"> False
+            </label>
+            <p id="result11" class=" mt-2 result"></p>
+        </form>
+
+        <form id="quizForm12" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+            <p class="que">Q5.A chair is an object used for holding books</p>
+            <label class=" me-3">
+                <input type="radio" name="question12" value="True"> True
+            </label>
+            <label class="me-3">
+                <input type="radio" name="question12" value="False"> False
+            </label>
+            <p id="result12" class=" mt-2 result"></p>
+        </form>
+
+        <form id="quizForm13" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+            <p class="que">Q6. Milk is a liquid food produced by mammals, often consumed by humans.</p>
+            <label class=" me-3">
+                <input type="radio" name="question13" value="True"> True
+            </label>
+            <label class="me-3">
+                <input type="radio" name="question13" value="False"> False
+            </label>
+            <p id="result13" class=" mt-2 result"></p>
+        </form>
+
+        <form id="quizForm14" class="col-lg-9 col-md-7 col-sm-12 col-12 border-bottom ">
+            <p class="que">Q7.You use a pencil to swim in the water.</p>
+            <label class=" me-3">
+                <input type="radio" name="question14" value="True"> True
+            </label>
+            <label class="me-3">
+                <input type="radio" name="question14" value="False"> False
+            </label>
+            <p id="result14" class=" mt-2 result"></p>
+        </form>
+        <div class="row">
+            <div class="col-md-2 mx-auto">
+                <div class="btn next-btn"><a href="vocab1.html">Previous</a></div>
+                </div>
+            <div class="col-md-2 mx-auto">
+            <div class="btn next-btn"><a href="vocab3.html">Next</a></div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="text-center text-lg-start text-white">
+        <div class="container pb-0">
+            <section class="">
+                <div class="row">
+                    <div class="col-md-3 col-md-3 col-md-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4">
+                            EDU Portal
+                        </h6>
+                        <p>
+                            Empowering education through a centralized platform for students, teachers
+                            and parents.
+                        </p>
+                    </div>
+ 
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-link">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+                        <p>
+                            <a class="quicklinks" href="index.html">Home</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="about_us.html">About Us</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="contact us.html">Contact Us</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="login.css">Sign In</a>
+                        </p>
+                    </div>
+ 
+                    <hr class="w-100 clearfix d-md-none" />
+ 
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 footer-link">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            Courses
+                        </h6>
+                        <p>
+                            <a class="quicklinks" href="vocab1.html">Vocabulary</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="grammar1.html">Grammar</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="reading1.html">Reading</a>
+                        </p>
+                        <p>
+                            <a class="quicklinks" href="ref.html">References</a>
+                          </p>
+                    </div>
+ 
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+ 
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="fas fa-home mr-3"></i> No. 635/J, Yoe Ma Yeik Thar (Pyae Road), 2nd Ward, Kamayut
+                            Township, Yangon.</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@edusn.co.uk</p>
+                        <p><i class="fas fa-phone mr-3"></i> +959 793 333 550</p>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-3">
+ 
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <div class="p-3">
+                            © Copyright 2024 EDU Portal. All rights reserved. Developed by The Artistic Avengers.
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <a href="https://www.facebook.com/profile.php?id=61569275469732&mibextid=ZbWKwL" class="m-1"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/hazel_in4k/profilecard/?igsh=MTBxejFlaTZwaWpo" class="m-1"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com/@edusn89?si=yujkEL1pSHDolMkS" class ="m-1"><i class="fa-brands fa-youtube"></i></a>
+                        <a class="m-1"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script>
+    document.getElementById('quizForm8').addEventListener('change', function(event) {
+    const result8 = document.getElementById('result8');
+    if (event.target.name === 'question8') {
+        if (event.target.value === 'True') {
+            result8.textContent = 'Correct!';
+            result8.className = 'correct';
+        } else {
+            result8.textContent = 'Wrong!';
+            result8.className = 'wrong';
+        }
+    }
+});
+
+document.getElementById('quizForm9').addEventListener('change', function(event) {
+    const result9 = document.getElementById('result9');
+    if (event.target.name === 'question9') {
+        if (event.target.value === 'False') {
+            result9.textContent = 'Correct!';
+            result9.className = 'correct';
+        } else {
+            result9.textContent = 'Wrong!';
+            result9.className = 'wrong';
+        }
+    }
+});
+
+document.getElementById('quizForm10').addEventListener('change', function(event) {
+    const result10 = document.getElementById('result10');
+    if (event.target.name === 'question10') {
+        if (event.target.value === 'True') {
+            result10.textContent = 'Correct!';
+            result10.className = 'correct';
+        } else {
+            result10.textContent = 'Wrong!';
+            result10.className = 'wrong';
+        }
+    }
+});
+
+document.getElementById('quizForm11').addEventListener('change', function(event) {
+    const result11 = document.getElementById('result11');
+    if (event.target.name === 'question11') {
+        if (event.target.value === 'True') {
+            result11.textContent = 'Correct!';
+            result11.className = 'correct';
+        } else {
+            result11.textContent = 'Wrong!';
+            result11.className = 'wrong';
+        }
+    }
+});
+
+document.getElementById('quizForm12').addEventListener('change', function(event) {
+    const result12 = document.getElementById('result12');
+    if (event.target.name === 'question12') {
+        if (event.target.value === 'False') {
+            result12.textContent = 'Correct!';
+            result12.className = 'correct';
+        } else {
+            result12.textContent = 'Wrong!';
+            result12.className = 'wrong';
+        }
+    }
+});
+
+document.getElementById('quizForm13').addEventListener('change', function(event) {
+    const result13 = document.getElementById('result13');
+    if (event.target.name === 'question13') {
+        if (event.target.value === 'True') {
+            result13.textContent = 'Correct!';
+            result13.className = 'correct';
+        } else {
+            result13.textContent = 'Wrong!';
+            result13.className = 'wrong';
+        }
+    }
+});
+
+document.getElementById('quizForm14').addEventListener('change', function(event) {
+    const result14 = document.getElementById('result14');
+    if (event.target.name === 'question14') {
+        if (event.target.value === 'False') {
+            result14.textContent = 'Correct!';
+            result14.className = 'correct';
+        } else {
+            result14.textContent = 'Wrong!';
+            result14.className = 'wrong';
+        }
+    }
+});
+</script>
+</html>
